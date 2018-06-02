@@ -2,7 +2,10 @@ body {
     background-color: lightskyblue;
 }
 
-.container {
+.navbar {
+    background-color: darkblue;
+    color: white;
+
     display: flex;
     justify-content: space-around;
 }
