@@ -3,11 +3,10 @@ $(document).ready(function(){
   initCustom();
 });
 
+/**
+ * Initialize Materialize objects
+ */
 function initMaterialize() {
-  // sidenav
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
   
   // pushpin
   $('#content').pushpin({
@@ -18,6 +17,9 @@ function initMaterialize() {
   $(".scrollspy").scrollSpy({
     scrollOffset: 0
   });
+
+  // slider
+  $('.slider').slider();
 }
 
 function initCustom() {
