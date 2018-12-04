@@ -1,22 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kris Koeckritz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <script src="main.js"></script>
+	<!--Import materialize, custom styles-->
+	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- Import fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
+	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Kris Koeckritz - Web Developer</title>
+
 </head>
 <body>
-    <div class="navbar">
-        <div class="brand">
-            <h1>Kris Koeckritz</h1>
-        </div>
-        <br>
-        World-class web dev.
-        <br>
-        Hire me today!
-    </div>
+	
+	<div class="holder">
+
+		<!-- Bio -->
+		<section id="intro" class="scrollspy blue lighten-1"></section>
+
+		<!-- navbar -->
+		<nav id="content">
+			<div class="nav-wrapper amber darken-1">
+				<div class="row">
+					<div class="col s6 offset-s3">
+						<div class="row">
+							<div class="col m6 s12">
+								<a href="#" id="nav_name" class="brand-logo left">
+									<span class="big_letter">Kris Koeckritz</span>
+								</a>
+							</div>
+							<div class="col m6 s12">
+								<a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+								<ul id="nav-mobile" class="hide-on-med-and-down right">
+									<li><a href="#intro">Bio</a></li>
+									<li><a href="#portfolio">Projects</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<!-- sidenav for collapsed navbar -->
+	<ul id="mobile-menu" class="sidenav">
+		<li><a href="#intro">Bio</a></li>
+		<li><a href="#portfolio">Projects</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="scrollspy blue darken-1">
+		<div class="valign-wrapper">
+			<div class="row">
+				<div class="col m12">
+					<h1 id="portfolio_header" class="center-block white-text">Projects</h1>
+					<hr>
+					<div class="row">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="scrollspy blue darken-3">
+		<div class="valign-wrapper">
+			<div class="row">
+				<div class="col m12">
+					<h1 id="contact_header" class="center white-text">Contact Me</h1>
+					<hr>
+					<br>
+					<div class="row left">
+						<div class="col s12">
+							<a href="https://www.linkedin.com/in/kkoeckritz/" class="white-text contact_text">
+								<i class="small material-icons contact_icon white-text">assignment_ind</i>
+								linkedin.com/in/kkoeckritz/
+							</a>
+							<br>
+							<a href="mailto:kriskoeckritz@gmail.com" class="white-text contact_text">
+								<i class="small material-icons contact_icon white-text">email</i>
+								kriskoeckritz@gmail.com
+							</a>
+							<br>
+							<a href="tel:+15309038234" class="white-text contact_text">
+								<i class="small material-icons contact_icon white-text">local_phone</i>
+								(530) 903-8234
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
