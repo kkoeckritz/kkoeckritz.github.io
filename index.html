@@ -1,126 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--Import materialize, custom styles-->
-	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- import Materialize, custom styles -->
+	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"/>
+	<link rel="stylesheet" href="./assets/css/resume.css">
 
-	<!-- Import fonts -->
+	<!-- import icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
 	
-	<!--Let browser know website is optimized for mobile-->
+	<!-- Let browser know website is optimized for mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Kris Koeckritz - Web Developer</title>
+	<link rel="icon" href="./assets/images/fav_low2.png" type="image/png">
+	<title>Kris Koeckritz - Resume</title>
 
 </head>
 <body>
-	
-	<div class="holder">
 
-		<!-- Bio -->
-		<section id="intro" class="scrollspy blue lighten-1"></section>
+	<noscript>
+		<div id="no_script">
+			<div class="row">
+				<div class="center col s12">
+					<span>You're not missing much, but I run better with JavaScript enabled.</span>
+				</div>
+			</div>
+		</div>
+	</noscript>
 
-		<!-- navbar -->
-		<nav id="content">
-			<div class="nav-wrapper amber darken-1">
+    <div id="main_doc">
+
+		<!-- name -->
+		<div class="row">
+			<div class="col s12">
+				<div id="full_name" class="left">
+					<span id="f_name">Kris</span> <span id="l_name">Koecritz</span><span id="tld"></span>
+				</div>
+			</div>
+		</div>
+
+		<!-- title, summary -->
+		<div class="row">
+			<div class="col s12">
+				<div id="job_title">
+					<span>Full Stack Developer</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12">
 				<div class="row">
-					<div class="col l6 m12 s12 offset-l3">
+					
+					<!-- left column -->
+					<div id="l_col" class="col m3 s12">
 						<div class="row">
-							<div class="col m6 s6">
-								<a href="#" id="nav_name" class="brand-logo left">
-									<span class="big_letter">Kris Koeckritz</span>
-								</a>
+							<div class="col s12">
+								<div class="section_heading valign-wrapper">
+									<i class="left material-icons small">account_box</i>
+									<span class="heading_text">Contact</span>
+								</div>	
 							</div>
-							<div class="col m6 s6">
-								<ul id="nav-mobile" class="right">
-									<li><a class="nav_text" href="#intro">Bio</a></li>
-									<li><a class="nav_text" href="#portfolio">Projects</a></li>
-									<li><a class="nav_text" href="#contact">Contact</a></li>
-								</ul>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<div class="p_tag">E-mail</div>
+								<span class="p_info">
+									<a href="mailto:kriskoeckritz@gmail.com">kriskoeckritz@gmail.com</a>
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<div class="p_tag">Phone</div>
+								<div class="p_info">
+									<a href="tel:+19168001080">(530) 916-1080</a>
+								</div>
+							</div>  
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<div class="p_tag">LinkedIn</div>
+								<span class="p_info">
+									<a href="http://linkedin.com/in/kkoeckritz">linkedin.com/in/kkoeckritz</a>
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<div class="p_tag">GitHub</div>
+								<div class="p_info">
+									<a href="http://github.com/kkoeckritz">github.com/kkoeckritz</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<div class="section_heading valign-wrapper">
+									<i class="left material-icons small">build</i>
+									<span class="heading_text">Technologies</span>
+								</div>	
 							</div>
 						</div>
 					</div>
+
+					<!-- right column -->
+					<div id="r_col" class="col m9 s12">
+						<div class="row">
+							<div class="col s12">
+								<div class="section_heading valign-wrapper">
+									<i class="left material-icons small">school</i>
+									<span class="heading_text">Education</span>
+								</div>								
+							</div>
+						</div>
+						<div class="row">
+							<div class="edu_section">
+								<div class="col s2 date_range">
+									<div>Jun 2018–</div>
+									<div>Dec 2018</div>
+								</div>
+								<div class="col s10 edu_info">
+									<div class="edu_name">
+										<span>UC Davis Extension, Sacramento, CA</span>
+									</div>
+									<div class="edu_degree">
+										<span>Certificate, Full Stack Web Development</span>
+									</div>
+									<ul class="browser-default edu_classes">
+										<li>MERN stack application development</li>
+										<li>MySQL, MongoDB, Firebase management</li>
+										<li>Project collaboration using Git, project boards, communication platforms</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="edu_section">
+								<div class="col s2 date_range">
+									<div>Aug 2015–</div>
+									<div>Dec 2017</div>
+								</div>
+								<div class="col s10 edu_info">
+									<div class="edu_name">
+										<span>Humboldt State University, Aracta, CA</span>
+									</div>
+									<div class="edu_degree">
+										<span>BS, Computer Science</span>
+									</div>
+									<ul class="browser-default edu_classes">
+										<li>Web Apps Using Databases</li>
+										<li>Software Engineering</li>
+										<li>Computer Security</li>
+									</ul>
+								</div>
+							</div>							
+						</div>
+
+						<div class="row">
+							<div class="col s12">
+								<div class="section_heading valign-wrapper">
+									<i class="left material-icons small">assignment</i>
+									<span class="heading_text">Experience</span>
+								</div>								
+							</div>
+						</div>
+						<div class="row">
+							<div class="exp_section">
+								<div class="col s2 date_range">
+									<div>2012–</div>
+									<div>2014,</div>
+									<div>2018</div>
+								</div>
+								<div class="col s10 exp_info">
+									<div class="exp_name">
+										<span>Apple Ridge Farms, Camino, CA</span>
+									</div>
+									<div class="exp_position">
+										<span>Retail Cashier (Seasonal)</span>
+									</div>
+									<ul class="browser-default exp_duties">
+										<li>Greeted and engaged customers to encourage high sales numbers</li>
+										<li>Expediently handled cash and credit transactions</li>
+										<li>Coordinated daily incentives and discounts with owners</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<div class="section_heading valign-wrapper">
+								<i class="left material-icons small">laptop_mac</i>
+								<span class="heading_text">Projects</span>
+							</div>				
+						</div>
+					</div>
 				</div>
+				
 			</div>
-		</nav>
+		</div>
+		
+        
 	</div>
 
-	<!-- sidenav for collapsed navbar -->
-	<ul id="mobile-menu" class="sidenav">
-		<li><a href="#intro">Bio</a></li>
-		<li><a href="#portfolio">Projects</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-
-	<!-- Portfolio -->
-	<section id="portfolio" class="scrollspy blue darken-1">
-		<div class="valign-wrapper">
-			<div class="row">
-				<div class="col m12">
-					<h1 id="portfolio_header" class="center block white-text">Selected Projects</h1>
-					<hr class="white">
-					<br>
-					<div class="row portfolio_row">
-						<div class="col s12 center">
-							<a href="" class="white-text portfolio_link">SoulMate</a><br>
-							<p class="white-text portfolio_text">text</p>
-						</div>
-					</div>
-					<br>
-					<div class="row portfolio_row">
-						<div class="col s12 center">
-							<a href="" class="white-text portfolio_link">link</a><br>
-							<p class="white-text portfolio_text">text</p>
-						</div>
-					</div>
-					<br>
-					<div class="row portfolio_row">
-						<div class="col s12 center">
-							<a href="" class="white-text portfolio_link">link</a><br>
-							<p class="white-text portfolio_text">text</p>
-						</div>
-					</div>
-					
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="center col s12">
+				<button id="print_page" class="btn-large white">Print Me</button>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<!-- Contact -->
-	<section id="contact" class="scrollspy blue darken-3">
-		<div class="valign-wrapper">
-			<div class="row">
-				<div class="col m12">
-					<h1 id="contact_header" class="center white-text">Contact Me</h1>
-					<hr class="white">
-					<br>
-					<div class="row left">
-						<div class="col s12">
-							<a href="https://www.linkedin.com/in/kkoeckritz/" class="white-text contact_text">
-								<i class="small material-icons contact_icon white-text">assignment_ind</i>
-								linkedin.com/in/kkoeckritz/
-							</a>
-							<br>
-							<a href="mailto:kriskoeckritz@gmail.com" class="white-text contact_text">
-								<i class="small material-icons contact_icon white-text">email</i>
-								kriskoeckritz@gmail.com
-							</a>
-							<br>
-							<a href="tel:+15309038234" class="white-text contact_text">
-								<i class="small material-icons contact_icon white-text">local_phone</i>
-								(530) 903-8234
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./assets/js/materialize.min.js"></script>
-	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/resume.js"></script>
 </body>
 </html>
