@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@font-face {
+    font-family: "Kaushian";
+    src: url("/assets/fonts/KaushanScript-Regular.ttf");
+}
 
 /* Global element styles */
 body {
     background-color: rgb(40, 80, 100);
-    font-family: 'Roboto', sans-serif !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+li::before {
+    content: '•';
+    margin-right: .8rem;
+
+    font-size: 12pt;
+    font-weight: 700;
 }
 
 ::selection {
@@ -38,10 +50,10 @@ body {
     width: 60%;
     margin: 0 auto;
     padding: 10px;
-
     border-radius: 0 0 4px 4px;
-    background-color: white;
+    
     font-size: 12pt;
+    background-color: white;
     color: #354045
 }
 
@@ -148,17 +160,15 @@ body {
 }
 
 .edu_degree {
-    padding-bottom: 5px;
-    
     font-size: 12pt;
     font-weight: 500;
 }
 
 .edu_classes {
     margin: 0;
-    padding-left: 1.1rem;
+    padding-left: 0;
 
-    list-style: outside disc;
+    list-style: none;
     font-size: 12pt;
 }
 
@@ -176,18 +186,61 @@ body {
 }
 
 .exp_position {
-    padding-bottom: 5px;
-
     font-size: 12pt;
     font-weight: 500;
 }
 
 .exp_duties {
     margin: 0;
-    padding-left: 1.1rem;
+    padding-left: 0;
 
-    list-style: outside disc;
+    list-style: none;
     font-size: 12pt;
+}
+
+.proj_section {
+    padding-top: 10px;
+
+    color: #253035
+}
+
+.proj_icon {
+    margin-right: 10px;
+    padding: 0 10px;
+    border-radius: 4px;
+    
+    font-size: 24pt;
+    background-color: #253035;
+    color: white;
+}
+
+.proj_name {
+    padding-bottom: 5px;
+    line-height: 100%;
+    
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+.proj_tech {
+    line-height: 150%;
+    
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.proj_desc {
+    line-height: 150%;
+    
+    font-size: 12pt;
+}
+
+.proj_links {
+
+}
+
+#sm_icon {
+    font-family: "Kaushian";
 }
 
 #print_page {

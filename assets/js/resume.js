@@ -50,15 +50,18 @@ function flashBrand() {
     }, 100);
 
     setTimeout(() => {
-        $("#tld").fadeIn(250);   
+        $("#tld").fadeIn(500);
+        setTimeout(() => {
+            $("#tld").fadeOut(250);
+        }, 1900);
     }, 500);
-    
+
 
     // animate back to name
     setTimeout(() => {
         
         // get rid of tld
-        $("#tld").fadeOut(400);
+        
 
         // add back letters to first name
         let j = 0;
@@ -88,7 +91,7 @@ function flashBrand() {
 
                 k++;
             }, 25);            
-        }, 300);
+        }, 100);
     }, 2500);
 }
 
