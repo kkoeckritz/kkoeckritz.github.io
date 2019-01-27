@@ -1,5 +1,6 @@
 flashBrand();
 enablePrint();
+enableClose();
 
 function flashBrand() {
     // store individual letters
@@ -103,4 +104,11 @@ function enablePrint() {
         $("#print_page").fadeIn(500);
         console.log("ready to print.");
     }, 3000);
+}
+
+function enableClose() {
+    $("#close_btn").one("click", () => {
+        $("#attn_box").slideUp(250);
+    });
+    console.log("ready to close attn.");
 }

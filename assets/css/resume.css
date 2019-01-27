@@ -56,10 +56,33 @@ li::before {
     margin: 0 auto;
     padding: 10px;
     
-    border-radius: 0 0 4px 4px;
     font-size: 12pt;
     background-color: white;
     color: #253035
+}
+
+#attn_box {
+    position: relative;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 10px;
+
+    border-radius: 0 0 4px 4px;
+    font-size: 14pt;
+    background-color: white;
+    color: #253035
+}
+
+#attn_text {
+    position: relative;
+}
+
+#close_btn {
+    position: absolute;
+    right: 5px;
+
+    border-radius: 4px;
+    background-color: rgb(40, 80, 100);
 }
 
 #main_doc {
@@ -292,6 +315,10 @@ li::before {
     #no_script {
         width: 80vw;
     }
+
+    #attn_box {
+        width: 80vw;
+    }
     
     #main_doc {
         width: 80vw;
@@ -300,6 +327,10 @@ li::before {
 
 @media (max-width: 1060px) {
     #no_script {
+        width: 90vw;
+    }
+
+    #attn_box {
         width: 90vw;
     }
 
@@ -312,7 +343,15 @@ li::before {
     #no_script {
         width: 100vw;
     }
-    
+
+    #attn_box {
+        width: 100vw;
+    }
+
+    #close_btn {
+        position: relative;
+    }
+
     #main_doc {
         width: 100vw;
     }
@@ -341,6 +380,10 @@ li::before {
         display: none !important;
     }
 
+    #attn_box {
+        display: none;
+    }
+    
     #main_doc {
         width: 100%;
         margin: 0;
@@ -376,12 +419,6 @@ li::before {
 
     .exp_duties {
         font-size: 10pt;
-    }
-
-    .proj_icon {
-        border: 3px solid #354045;
-        background-color: white;
-        color: #354045;
     }
 
     .proj_code::before {
