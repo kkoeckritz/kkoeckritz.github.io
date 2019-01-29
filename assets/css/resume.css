@@ -85,7 +85,9 @@ li::before {
 
 #close_btn {
     position: absolute;
-    right: 2px;
+    height: 24px;
+    line-height: 24px;
+    right: 10px;
 
     border-radius: 4px;
     background-color: rgb(40, 80, 100);
@@ -347,11 +349,13 @@ li::before {
 
 @media (max-width: 950px) {
     #no_script {
-        width: 100vw;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     #attn_box {
-        width: 100vw;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     #close_btn {
@@ -359,15 +363,20 @@ li::before {
     }
 
     #main_doc {
-        width: 100vw;
+        width: 100%;
+        margin-top: 0;
     }
 
-    #proj_tech {
+    .tech_section {
         font-size: 10pt;
     }
 }
 
 @media (max-width: 600px) {
+    .tech_section {
+        font-size: 12pt;
+    }
+
     #r_col {
         padding-left: 0 !important;
     }
@@ -391,7 +400,7 @@ li::before {
     }
 
     #attn_box {
-        display: none;
+        display: none !important;
     }
     
     #main_doc {
