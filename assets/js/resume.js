@@ -1,6 +1,6 @@
 flashBrand();
 enablePrint();
-enableClose();
+enableAttn();
 
 function flashBrand() {
     // store individual letters
@@ -106,9 +106,19 @@ function enablePrint() {
     }, 3000);
 }
 
+function enableAttn() {
+    if (localStorage.getItem("attn_hide") === null) {
+        setTimeout(() => {
+            $("#attn_box").slideDown(250);
+            enableClose();
+        }, 2500);
+    }
+}
+
 function enableClose() {
     $("#close_btn").one("click", () => {
         $("#attn_box").slideUp(250);
+        localStorage.setItem("attn_hide", 1);
     });
     console.log("ready to close attn.");
 }
