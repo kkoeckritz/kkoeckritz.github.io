@@ -259,6 +259,11 @@ li::before {
     font-size: 24pt;
 }
 
+.proj_icon img {
+    width: 80px;
+    height: 48px;
+}
+
 #sm_icon {
     font-family: "Kaushian", cursive;
 }
