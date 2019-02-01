@@ -103,7 +103,7 @@ function enablePrint() {
         });
         $("#print_page").fadeIn(500);
         console.log("ready to print.");
-    }, 3000);
+    }, 2500);
 }
 
 function enableAttn() {
