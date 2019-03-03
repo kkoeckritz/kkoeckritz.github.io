@@ -35,7 +35,6 @@ function flashBrand() {
     // l_name.fadeIn(500);
 
     // animate to brand
-    console.log("start flashBrand()...");
     let i = 0;
     let b_int = setInterval(() => {
 
@@ -44,7 +43,6 @@ function flashBrand() {
             l_name.text(cur_b + b_letters[i]);
         } else {
             clearInterval(b_int);
-            console.log("finished.")
         }
 
         i++;
@@ -87,7 +85,6 @@ function flashBrand() {
                     l_name.text(cur_l + l_letters[k]);
                 } else {
                     clearInterval(l_int);
-                    console.log("finished.")
                 }
 
                 k++;
@@ -102,7 +99,6 @@ function enablePrint() {
             window.print();
         });
         $("#print_page").fadeIn(500);
-        console.log("ready to print.");
     }, 2500);
 }
 
@@ -120,5 +116,4 @@ function enableClose() {
         $("#attn_box").slideUp(250);
         localStorage.setItem("attn_hide", 1);
     });
-    console.log("ready to close attn.");
 }
