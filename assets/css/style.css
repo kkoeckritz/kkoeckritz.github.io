@@ -1,0 +1,344 @@
+body {
+	overflow-y: scroll;
+}
+
+/* Intro, Nav holder */
+.holder {
+	height: 100vh;
+}
+
+
+/* Intro */
+#intro {
+	height: calc(100vh - 64px);
+	z-index: 1;
+}
+
+.parallax-container {
+	width: 100%;
+	height: calc(100vh - 64px);
+}
+
+#parallax_image {
+	width: 110%;
+	height: 125vh;
+}
+
+.raise_z {
+	z-index: 12 !important;
+}
+
+.intro_col {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100vw !important;
+}
+
+#intro_header {
+	font-family: 'Fjalla One', sans-serif;
+
+	font-weight: bold;
+	text-shadow: -2px 2px 1px #ff8f00;
+}
+
+#intro_change {
+	font-style: italic;
+}
+
+.intro_text {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30pt;
+	font-weight: bold;
+	text-shadow: -2px 2px 1px #ff8f00;
+}
+
+.intro_row {
+	width: 100vw;
+	z-index: 10;
+}
+
+.intro_valign {
+	bottom: 200px;
+}
+
+.intro_carousel_text {
+	margin: 0;
+	padding: 0;
+	font-size: 18pt !important;
+	font-weight: 100;
+	background-color: #ff8f00;
+}
+
+.img_me {
+	width: 220px;
+    position: absolute !important;
+    left: 25.2vw !important;
+    bottom: -20px !important;
+	border-left: solid 2px white;
+	border-top: solid 2px white;
+	border-radius: 5px 0 0 0;
+	background-color: #FFB400;
+	z-index: 2;
+	/* box-shadow: 2px 2px 20px #333333; */
+}
+
+#bio {
+	height: 212px;
+	position: absolute !important;
+	left: calc(25.2vw + 214px) !important;
+    right: 25.2vw !important;
+	bottom: -12px !important;
+	border: solid 2px white;
+	border-radius: 0 5px 0 0;
+	background-color: #ff8f00;
+	padding: 10px 10px 10px 20px;
+	z-index: 1;
+	font-size: 16pt;
+	line-height: 18pt;
+}
+
+.bullets {
+	padding-right: 12px;
+}
+
+.bio_text {
+	font-weight: 400;
+	margin: 0;
+}
+
+#nav_dummy {
+	position: relative !important;
+	top: 100%;
+	outline: 1px solid white;
+	z-index: 0 !important;
+}
+
+/* navbar */
+#nav_float {
+	position: relative;
+	z-index: 2 !important;
+}
+
+#nav_float .row {
+	margin-bottom: 0;
+}
+
+#nav_float .active {
+	background-color: #ff8f00;
+}
+
+#nav_name {
+	cursor: default;
+}
+
+.big_letter {
+	/* background-color: #ffc107;
+	border-radius: 5px; */
+	font-size: 30pt;
+	font-family: 'Fjalla One', sans-serif;
+	text-shadow: -2px 2px 1px #ff8f00;
+}
+
+
+/* Portfolio */
+#portfolio {
+	height: 100vh;
+}
+
+#portfolio_header {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+}
+
+.portfolio_row {
+	width: 75vw;
+}
+
+#portfolio_carousel {
+	border-radius: 10px;
+}
+
+.indicator-item {
+	width: 12px !important;
+	height: 12px !important;
+}
+
+.portfolio_title {
+	font-size: 30pt !important;
+	font-weight: 800;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.title_sm {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.title_re_1 {
+	font-family: 'Knewave', cursive;
+	color: white;
+}
+
+.title_re_2 {
+	font-family: 'Knewave', cursive;
+	color: #FFB400;
+}
+
+.title_ss {
+	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700 !important;
+}
+
+/* .portfolio_link {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-size: 28pt;
+	line-height: 50px;
+	font-weight: 100;
+	font-family: 'Fjalla One', sans-serif;
+	font-style: italic;
+	white-space: nowrap;
+} */
+
+.portfolio_text {
+	margin: 0;
+	padding: 0;
+	font-size: 18pt !important;
+	font-weight: 100;
+	white-space: nowrap;
+}
+
+.portfolio_text:any-link {
+	text-decoration: none;
+}
+
+
+/* Portfolio modals */
+.modal_title {
+	font-size: 40pt !important;
+}
+
+/* Contact */
+#contact {
+	height: 101vh;
+}
+
+.valign-wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+#contact_header {
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bold;
+	z-index: 3;
+}
+
+.contact_text {
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: 24pt;
+	line-height: 50px;
+	font-weight: 100;
+	font-family: 'Fjalla One', sans-serif;
+	white-space: nowrap;
+	z-index: 3;
+}
+
+.contact_links {
+	padding-left: 20px;
+}
+
+.contact_circle {
+	position: relative;
+	/* left: 0; */
+	z-index: 2;
+}
+
+
+/* mobile size fixes */
+@media only screen and (max-width: 992px) {
+	.img_me {
+		width: 240px;
+		position: absolute !important;
+		left: -20px !important;
+		bottom: -20px !important
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    #intro {
+		height: calc(100% - 57px);
+	}
+
+	#parallax_image {
+
+		width: 140%;
+		height: 120vh;
+		filter: blur(5px);
+	}
+	
+	#intro_header {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 40pt;
+		font-weight: bold;
+		text-shadow: -2px 2px 1px #ff8f00;
+	}
+
+	.intro_text {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 20pt;
+		font-weight: bold;
+		text-shadow: -1px 1px 1px #ff8f00;
+	}
+
+	.img_me {
+		position: absolute !important;
+		width: 182px;
+		left: -20px !important;
+		bottom: -16px !important;
+	}
+
+	.big_letter {
+        font-size: 22pt;
+	}
+
+	.nav_text {
+		padding: 0 5px;
+		font-size: 10pt;
+	}
+
+	/* #portfolio {
+		height: 100%;
+	} */
+	
+	#portfolio_header {
+		font-size: 26pt;
+	}
+
+	.portfolio_row {
+		width: 90vw;
+	}
+		
+	.portfolio_title {
+		font-size: 26pt;
+	}
+
+	.portfolio_text {
+		font-size: 12pt;
+	}
+
+	#contact {
+		height: 101vh;
+	}
+	
+	#contact_header {
+		font-size: 26pt;
+	}
+
+	.contact_text {
+		font-size: 16pt;
+	}
+}

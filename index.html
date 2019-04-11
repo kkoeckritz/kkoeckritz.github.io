@@ -1,342 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--Import materialize, custom styles-->
+	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="./assets/css/style.css">
 
-	<!-- set metadata -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta charset="utf-8">
-	<meta name="author" content="Kris Koeckritz">
-	<meta name="description" content="">
-
-	<!-- import Materialize, custom styles -->
-	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css">
-	<link rel="stylesheet" href="./assets/css/resume.css">
-
-	<!-- import icons -->
+	<!-- Import fonts -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Knewave|Kaushan+Script" rel="stylesheet">
 	
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="icon" href="./assets/images/fav_low2.png" type="image/png">
-	<title>Kris Koeckritz - Full Stack Developer</title>
+	<title>Kris Koeckritz - Web Developer</title>
 
 </head>
 <body>
+	
+	<!-- container for intro, navbar -->
+	<div class="holder blue darken-1">
 
-	<noscript>
-		<div id="no_script">
-			<div class="row">
-				<div class="center col s12">
-					<span>You're not missing much, but I run better with JavaScript enabled.</span>
+		<!-- Bio -->
+		<section id="intro" class="scrollspy blue lighten-1 parallax-container">
+			<div class="parallax">
+				<img src="./assets/images/intro_back.jpg" id="parallax_image">
+				<div class="valign-wrapper raise_z">
+					<div class="row raise_z">
+						<div class="col s12 intro_col">
+							<h1 id="intro_header" class="center white-text">Trying to Build Something <span id="intro_change">Unique?</span></h1>
+							<p class="center white-text intro_text">I Can Do That.</p>
+							<br>
+							<!-- <div class="row intro_row">
+								<div class="col s12 intro_col">
+									<div id="intro_carousel" class="carousel carousel-slider center">
+										<div class="carousel-item" href="#one!">
+											<div class="intro_valign">
+												<p class="white-text intro_carousel_text">This is your first panel</p>
+											</div>
+										</div>
+										<div class="carousel-item" href="#two!">
+											<div class="intro_valign">
+												<p class="white-text intro_carousel_text">This is your second panel</p>
+											</div>
+										</div>
+										<div class="carousel-item" href="#three!">
+											<div class="intro_valign">
+												<p class="white-text intro_carousel_text">This is your third panel</p>
+											</div>
+										</div>
+										<div class="carousel-item" href="#four!">
+											<div class="intro_valign">
+												<p class="white-text intro_carousel_text">This is your fourth panel</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</noscript>
+			
+			<!-- <img src="./assets/images/head_trans.png" alt="headshot" class="img_me">
+			<div id="bio">
+				<p class="white-text bio_text"><span class="bullets">‣</span>This is a bio about me. I am great. Please hire me.</p>
+				<p class="white-text bio_text"><span class="bullets">‣</span>I am very smart.</p>
+				<p class="white-text bio_text"><span class="bullets">‣</span>I like to make things go.</p>
+				<p class="white-text bio_text"><span class="bullets">‣</span>Web development is terrific fun.</p>
+				<p class="white-text bio_text"><span class="bullets">‣</span>Put me to work today!</p>
+			</div> -->
 
-	<div id="attn_box">
-		<div class="row center">
-			<div class="center col s12">
-				<span id="attn_text">There's more coming soon. In the meantime, have a look at my resume.</span>
+			<!-- dummy div for nav outline -->
+			<div id="nav_dummy"></div>
+		</section>
+
+
+
+		<!-- navbar -->
+		<nav id="nav_float">
+			<div class="nav-wrapper amber darken-1">
+				<div class="row">
+					<div class="col l6 m12 s12 offset-l3">
+						<div class="row">
+							<div class="col m6 s6">
+								<a href="#!" id="nav_name" class="brand-logo left">
+									<span class="big_letter">Kris Koeckritz</span>
+								</a>
+							</div>
+							<div class="col m6 s6">
+								<ul id="nav-mobile" class="right">
+									<li><a class="nav_text" href="#intro">Top</a></li>
+									<li><a class="nav_text" href="#portfolio">Projects</a></li>
+									<li><a class="nav_text" href="#contact">Contact</a></li>
+									<li><a href="#resume" class="nav_text">Resume</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<button id="close_btn" class="btn btn-small"><i class="material-icons white-text">close</i></button>
-		</div>
+		</nav>
 	</div>
 
-    <div id="main_doc">
+	<!-- sidenav for collapsed navbar -->
+	<ul id="mobile-menu" class="sidenav">
+		<li><a href="#intro">Bio</a></li>
+		<li><a href="#portfolio">Projects</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
 
-		<!-- name -->
-		<div class="row">
-			<div class="col s12">
-				<div id="full_name" class="left">
-					<span id="f_name">Kris</span> <span id="l_name">Koecritz</span><span id="tld"></span>
-				</div>
-			</div>
-		</div>
-
-		<!-- title, summary -->
-		<div class="row">
-			<div class="col s12">
-				<div id="job_title">
-					<span>Full Stack Developer</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col s12">
-				<div class="row">
-					
-					<!-- left column -->
-					<div id="l_col" class="col m3 s12">
-						<div class="row">
-							<div class="col s12">
-								<div class="section_heading valign-wrapper">
-									<i class="left material-icons small">account_box</i>
-									<span class="heading_text">Contact</span>
+	<!-- Portfolio -->
+	<section id="portfolio" class="scrollspy blue darken-1">
+		<div class="valign-wrapper">
+			<div class="row">
+				<div class="col m12">
+					<h1 id="portfolio_header" class="center block white-text">Selected Projects</h1>
+					<hr class="white-text">
+					<br>
+					<div class="row portfolio_row">
+						<div class="col s12">
+							
+							<div id="portfolio_carousel" class="carousel carousel-slider center">
+								<div class="carousel-item blue darken-1" href="#one!">
+									<a href="https://soulwork-soulmate-demo.herokuapp.com/" target="_blank" rel="noopener">
+										<h2 class=" white-text portfolio_title">
+											<span class="title_sm">SoulMate</span>
+										</h2>
+									</a>
+									<p class="white-text portfolio_text">A custom-tailored quiz for Soul Work Coffee.</p>
+									<br>
+									<br>
+									<br>
+									<br>
+									<button class="btn-flat white-text amber darken-3 modal-trigger" data-target="modal_sm">more 》</button>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<div class="p_tag">E-mail</div>
-								<span class="p_info">
-									<a href="mailto:kriskoeckritz@gmail.com">kriskoeckritz@gmail.com</a>
-								</span>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<div class="p_tag">Phone</div>
-								<div class="p_info">
-									<a href="tel:+19168001080">(916) 800-1080</a>
+								<div class="carousel-item blue darken-1" href="#two!">
+									<a href="https://rouleats-reloaded.herokuapp.com/" target="_blank" rel="noopener">
+										<h2 class="portfolio_title white-text">
+											<span class="title_re_1">Roul</span><span class="title_re_2">Eats</span>
+										</h2>
+									</a>
+									<p class="white-text portfolio_text">A taste of the upcoming restaurant decider app.</p>
+									<br>
+									<br>
+									<br>
+									<br>
+									<button class="btn-flat white-text amber darken-3 modal-trigger" data-target="modal_re">more 》</button>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<div class="p_tag">LinkedIn</div>
-								<span class="p_info">
-									<a href="http://linkedin.com/in/kkoeckritz">linkedin.com/in/kkoeckritz</a>
-								</span>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<div class="p_tag">GitHub</div>
-								<div class="p_info">
-									<a href="http://github.com/kkoeckritz">github.com/kkoeckritz</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<div class="section_heading valign-wrapper">
-									<i class="left material-icons small">build</i>
-									<span class="heading_text">Technologies</span>
-								</div>
-							</div>
-						</div>
-						<div class="tech_section">
-							<div class="row">
-								<div class="center col s6">Python</div>
-								<div class="center col s6">JavaScript</div>
-							</div>
-						</div>
-						<div class="tech_section">
-							<div class="row">
-								<div class="center col s4">HTML5</div>
-								<div class="center col s4">C++</div>
-								<div class="center col s4">CSS</div>
-							</div>
-						</div>
-						<div class="tech_section">
-							<div class="row">
-								<div class="center col s4">MongoDB</div>
-								<div class="center col s4">SQL</div>
-								<div class="center col s4">Firebase</div>
-							</div>
-						</div>
-						<div class="tech_section">
-							<div class="row">
-								<div class="center col s4">PHP</div>
-								<div class="center col s4">React</div>
-								<div class="center col s4">Angular</div>
-							</div>
-						</div>
-						<div class="tech_section">
-							<div class="row">
-								<div class="center col s6">Git</div>
-								<div class="center col s6">Linux</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- right column -->
-					<div id="r_col" class="col m9 s12">
-						<div class="row">
-							<div class="col s12">
-								<div class="section_heading valign-wrapper">
-									<i class="left material-icons small">school</i>
-									<span class="heading_text">Education</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="edu_section">
-								<div class="col s2 date_range">
-									<div>Jun 2018–</div>
-									<div>Dec 2018</div>
-								</div>
-								<div class="col s10 edu_info">
-									<div class="edu_name">
-										<span>UC Davis Extension, Sacramento, CA</span>
-									</div>
-									<div class="edu_degree">
-										<span>Certificate, Full Stack Web Development</span>
-									</div>
-									<ul class="browser-default edu_classes">
-										<li>MERN stack application development</li>
-										<li>MySQL, MongoDB, Firebase management</li>
-										<li>Project collaboration using Git, project boards, communication platforms</li>
-										<li>MVP requirements gathering and negotiation with real-world clients</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="edu_section">
-								<div class="col s2 date_range">
-									<div>Aug 2015–</div>
-									<div>Dec 2017</div>
-								</div>
-								<div class="col s10 edu_info">
-									<div class="edu_name">
-										<span>Humboldt State University, Aracta, CA</span>
-									</div>
-									<div class="edu_degree">
-										<span>BS, Computer Science</span>
-									</div>
-									<ul class="browser-default edu_classes">
-										<li>Web Apps Using Databases</li>
-										<li>Software Engineering</li>
-										<li>Computer Security</li>
-									</ul>
-								</div>
-							</div>							
-						</div>
-
-						<div class="row">
-							<div class="col s12">
-								<div class="section_heading valign-wrapper">
-									<i class="left material-icons small">assignment</i>
-									<span class="heading_text">Experience</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="exp_section">
-								<div class="col s2 date_range">
-									<div>2012–</div>
-									<div>2014,</div>
-									<div>2018</div>
-								</div>
-								<div class="col s10 exp_info">
-									<div class="exp_name">
-										<span>Apple Ridge Farms, Camino, CA</span>
-									</div>
-									<div class="exp_position">
-										<span>Retail Cashier (Seasonal)</span>
-									</div>
-									<ul class="browser-default exp_duties">
-										<li>Greeted and engaged customers to encourage sales</li>
-										<li>Expediently handled cash and credit transactions</li>
-									</ul>
+								<div class="carousel-item blue darken-1" href="#three!">
+									<a href="https://scrapesoda.herokuapp.com/" target="_blank" rel="noopener">
+										<h2 class=" white-text portfolio_title">
+											<span class="title_ss">ScrapeSoda</span>
+										</h2>
+									</a>
+									<p class="white-text portfolio_text">Read, save, and annotate NYT political articles.</p>
+									<br>
+									<br>
+									<br>
+									<br>
+									<button class="btn-flat white-text amber darken-3 modal-trigger" data-target="modal_ss">more 》</button>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio modals -->
+	<div id="modal_sm" class="modal black">
+		<div class="modal-content grey darken-3">
+			<h2 class="white-text center portfolio_title modal_title">
+				<span class="title_sm">SoulMate</span>
+			</h2>
+			<div class="container white">
+				<p id="modal_text"></p>	
+			</div>
+		</div>
+		<div class="modal-footer grey darken-2">
+			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
+			<a href="https://soulwork-soulmate-demo.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <i class="material-icons">call_made</i></a>
+			<a href="https://github.com/kkoeckritz/CoffeeMatch" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <i class="material-icons">code</i></a>
+		</div>
+	</div>
+	<div id="modal_re" class="modal black">
+		<div class="modal-content grey darken-3">
+			<h2 class="white-text center portfolio_title modal_title">
+				<span class="title_re_1">Roul</span><span class="title_re_2">Eats</span>
+			</h2>
+			<div class="container white">
+				<p id="modal_text"></p>	
+			</div>
+		</div>
+		<div class="modal-footer grey darken-2">
+			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
+			<a href="https://rouleats-reloaded.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <i class="material-icons">call_made</i></a>
+			<a href="https://github.com/kkoeckritz/RoulEats_Reloaded" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <i class="material-icons">code</i></a>
+		</div>
+	</div>
+	<div id="modal_ss" class="modal black">
+		<div class="modal-content grey darken-3">
+			<h2 class="white-text center portfolio_title modal_title">
+				<span class="title_ss">ScrapeSoda</span>
+			</h2>
+			<div class="container white">
+				<p id="modal_text"></p>	
+			</div>
+		</div>
+		<div class="modal-footer grey darken-2">
+			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
+			<a href="https://scrapesoda.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <i class="material-icons">call_made</i></a>
+			<a href="https://github.com/kkoeckritz/scrape_soda" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <i class="material-icons">code</i></a>
+		</div>
+	</div>	
+
+	<!-- Contact -->
+	<section id="contact" class="scrollspy blue darken-3">
+		<div class="valign-wrapper">
+			<div class="row">
+				<div class="col m12">
+					<h1 id="contact_header" class="center white-text">Contact Me</h1>
+					<hr class="white-text">
+					<br>
 					<div class="row">
 						<div class="col s12">
-							<div class="section_heading valign-wrapper">
-								<i class="left material-icons small">laptop_mac</i>
-								<span class="heading_text">Projects</span>
-							</div>				
-						</div>
-					</div>
-					<div class="proj_section">
-						<div class="row">
-							<div class="center proj_icon col">
-								<img src="/assets/images/sm-icon-lg.png" alt="SM" id="sm_icon">
-							</div>
-							<div class="col">
-								<div class="proj_name">Soul Work SoulMate</div>
-								<div class="col s12 proj_tech">React · Node.js · MongoDB · Express.js · Shopify REST Admin API</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="proj_desc">Custom brewed for Soul Work Coffee, this elegant quiz finds patrons the perfect roast matched to them.</div>
-						</div>
-						<div class="row">
-							<div class="proj_links">
-								<a href="https://github.com/kkoeckritz/CoffeeMatch" 
-								   class="proj_code" 
-								   data-link="github.com/kkoeckritz/CoffeeMatch"><i class="tiny material-icons">code</i></a>
-								<a href="http://soulwork-soulmate-demo.herokuapp.com" 
-								   class="proj_depl" 
-								   data-link="soulwork-soulmate-demo.herokuapp.com" 
-								   target="_blank" 
-								   rel="noopener"><i class="tiny material-icons">call_made</i></a>
+							<div class="contact_text">
+								<a href="https://www.linkedin.com/in/kkoeckritz/" class="white-text">
+									<i class="small material-icons contact_icon white-text">assignment_ind</i>
+									<span class="contact_links">linkedin.com/in/kkoeckritz/</span>
+								</a>
+								<br>
+								<a href="mailto:kriskoeckritz@gmail.com" class="white-text">
+									<i class="small material-icons contact_icon white-text">email</i>
+									<span class="contact_links">kriskoeckritz@gmail.com</span>
+								</a>
+								<br>
+								<a href="tel:+19168001080" class="white-text">
+									<i class="small material-icons contact_icon white-text">local_phone</i>
+									<span class="contact_links">(916) 800-1080</span>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="proj_section">
-						<div class="row">
-							<div class="center proj_icon col">
-								<img src="/assets/images/re-icon-lg.png" alt="RE" id="re_icon">
-							</div>
-							<div class="col">
-								<div class="proj_name">RoulEats</div>
-								<div class="col s12 proj_tech">Node.js · MySQL · Express.js · EJS · Yelp Fusion API</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="proj_desc">The dining decider web app that finds somewhere great to eat nearby—anytime, anywhere.</div>
-						</div>
-						<div class="row">
-							<div class="proj_links">
-								<a href="https://github.com/kkoeckritz/Rouleats_Reloaded" 
-								   class="proj_code" 
-								   data-link="github.com/kkoeckritz/Rouleats_Reloaded"><i class="tiny material-icons">code</i></a>
-								<a href="http://rouleats-reloaded.herokuapp.com" 
-								   class="proj_depl" 
-								   data-link="rouleats-reloaded.herokuapp.com" 
-								   target="_blank" 
-								   rel="noopener"><i class="tiny material-icons">call_made</i></a>
-							</div>
-						</div>
-					</div>
-					<div class="proj_section">
-						<div class="row">
-							<div class="center proj_icon col">
-								<img src="/assets/images/ss-icon-lg.png" alt="SS" id="ss_icon">
-							</div>
-							<div class="col">
-								<div class="proj_name">ScrapeSoda</div>
-								<div class="col s12 proj_tech">Node.js · MongoDB · Express.js · Axios · Handlebars</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="proj_desc">A handy news aggregator that offers easy saving and annotating of NYT political articles.</div>
-						</div>
-						<div class="row">
-							<div class="proj_links">
-								<a href="https://github.com/kkoeckritz/scrape_soda" 
-								   class="proj_code" 
-								   data-link="github.com/kkoeckritz/scrape_soda"><i class="tiny material-icons">code</i></a>
-								<a href="http://scrapesoda.herokuapp.com" 
-								   class="proj_depl" 
-								   data-link="scrapesoda.herokuapp.com" 
-								   target="_blank" 
-								   rel="noopener"><i class="tiny material-icons">call_made</i></a>
-							</div>
-						</div>
-					</div>					
 				</div>
 			</div>
 		</div>
-		
-        
-	</div>
+	</section>
 
-	<div class="container">
-		<div class="row">
-			<div class="center col s12">
-				<button id="print_page" class="btn-large white">Print Me</button>
-			</div>
-		</div>
-	</div>
+	<!-- <div class="row center circle_holder">
+		<img src="./assets/images/circle.svg" class="contact_circle" alt="nothing here">
+	</div> -->
 
+	
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./assets/js/materialize.min.js"></script>
-	<script type="text/javascript" src="./assets/js/resume.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>

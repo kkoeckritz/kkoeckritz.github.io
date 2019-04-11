@@ -38,13 +38,6 @@ li::before {
     padding: 0 !important;
 }
 
-.material-icons {
-    margin-left: 0;
-    padding-left: 0;
-
-    color: #354045
-}
-
 .btn-large {
     border-radius: 4px;
 }
@@ -52,7 +45,7 @@ li::before {
 
 /* Custom styles */
 #no_script {
-    width: 60vw;
+    width: 8.5in;
     margin: 0 auto;
     padding: 10px;
     
@@ -65,7 +58,7 @@ li::before {
 #attn_box {
     display: none;
     position: relative;
-    width: 60vw;
+    width: 8.5in;
     margin: 0 auto;
     padding: 10px;
 
@@ -94,7 +87,8 @@ li::before {
 }
 
 #main_doc {
-    width: 60vw;
+    width: 8.5in;
+    height: 11in;
     margin: 40px auto;
     padding: 40px;
     
@@ -105,7 +99,7 @@ li::before {
 #full_name {
     line-height: 100%;
     
-    font-size: 40pt;
+    font-size: 34pt;
     font-kerning: none;
     color: #253035
 }
@@ -133,53 +127,58 @@ li::before {
     padding-left: .15rem;
     line-height: 100%;
 
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: 300;
     color: #253035
 }
 
-#l_col {
-
-}
-
 .section_heading {
     padding-top: 20px;
-    line-height: 100%;
+    line-height: 140%;
     
-    border-bottom: 1px solid #a0b0b8;
+    border-bottom: 1px solid #c0d0d8;
 }
 
 .heading_text {
-    font-size: 18pt;
+    font-size: 12pt;
     font-weight: 500;
     color: #253035
 }
 
-.p_tag {
-    padding-top: 10px;
-    padding-left: .2rem;
-    
+.icon {
     font-size: 12pt;
-    font-weight: 700;
-    color: #253035
+    color: #354045
+}
+
+.contact_section {
+    padding-top: 20px;
 }
 
 .p_info {
-    padding-left: .2rem;
+    display: inline-block;
+    
+    padding-right: .7rem;
     
     font-size: 12pt;
     font-weight: 400;
     color: #253035
 }
 
+.summary_section {
+    padding-top: 10px;
+    
+    font-size: 12pt;
+}
+
 .tech_section {
     padding-top: 10px;
     
+    font-size: 12pt;
     color: #253035;
 }
 
-#r_col {
-    padding-left: 40px !important;
+.bold {
+    font-weight: 700;
 }
 
 .edu_section {
@@ -189,7 +188,7 @@ li::before {
 }
 
 .date_range {
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 500;
 }
 
@@ -197,7 +196,7 @@ li::before {
     padding-bottom: 5px;
     line-height: 100%;
     
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 700;
 }
 
@@ -224,7 +223,7 @@ li::before {
     padding-bottom: 5px;
     line-height: 100%;
 
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 700;
 }
 
@@ -248,48 +247,21 @@ li::before {
     color: #253035
 }
 
-.proj_icon {
-    width: 80px;
-    height: 48px;
-    margin-right: 8px !important;
-    
-    border-radius: 4px;
-    background-color: #354045;
-    color: white;
-    font-size: 24pt;
-}
-
-.proj_icon img {
-    width: 80px;
-    height: 48px;
-}
-
-#sm_icon {
-    font-family: "Kaushian", cursive;
-}
-
-#re_icon {
-    font-family: "Knewave", cursive;
-}
-
-#ss_icon {
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-    font-weight: 700;
-}
-
-.proj_name {
+.proj_heading {
+    display: inline;
     padding-bottom: 5px;
     line-height: 100%;
     
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: 700;
 }
 
 .proj_tech {
+    display: inline;
     line-height: 150%;
     
     font-size: 12pt;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .proj_desc {
@@ -299,16 +271,15 @@ li::before {
 }
 
 .proj_links {
-    word-spacing: 2.4rem;
     font-weight: 500;
 }
 
-.proj_code::before {
-    content: "Code";
+.proj_code {
+    padding-right: .6rem;
 }
 
-.proj_depl::before {
-    content: "Deployed"
+.proj_depl {
+    padding-right: .6rem;
 }
 
 #print_page {
@@ -324,43 +295,19 @@ li::before {
 
 
 /* Mobile fixes */
-@media (max-width: 1420px) {
-    #no_script {
-        width: 80vw;
-    }
-
-    #attn_box {
-        width: 80vw;
-    }
-    
-    #main_doc {
-        width: 80vw;
-    }
-}
-
-@media (max-width: 1060px) {
-    #no_script {
-        width: 90vw;
-    }
-
-    #attn_box {
-        width: 90vw;
-    }
-
-    #main_doc {
-        width: 90vw;
-    }
-}
-
-@media (max-width: 950px) {
+@media (max-width: 834px) {
     #no_script {
         width: 100%;
         margin-bottom: 20px;
+        
+        border-radius: 0;
     }
 
     #attn_box {
         width: 100%;
         margin-bottom: 20px;
+
+        border-radius: 0;
     }
 
     #close_btn {
@@ -369,21 +316,10 @@ li::before {
 
     #main_doc {
         width: 100%;
+        height: unset;
         margin-top: 0;
-    }
 
-    .tech_section {
-        font-size: 10pt;
-    }
-}
-
-@media (max-width: 600px) {
-    .tech_section {
-        font-size: 12pt;
-    }
-
-    #r_col {
-        padding-left: 0 !important;
+        border-radius: 0;
     }
 }
 
@@ -418,7 +354,7 @@ li::before {
     }
 
     #job_title {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     .section_heading {
@@ -426,31 +362,23 @@ li::before {
     }
 
     .heading_text {
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     .p_tag {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .p_info {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .edu_classes {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     .exp_duties {
-        font-size: 10pt;
-    }
-
-    .proj_code::before {
-        content: attr(data-link);
-    }
-
-    .proj_depl::before {
-        content: attr(data-link);
+        font-size: 12pt;
     }
 
     #print_page {
