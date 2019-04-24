@@ -3,7 +3,7 @@
 <head>
 	<!--Import materialize, custom styles-->
 	<link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
 
 	<!-- Import fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Knewave|Kaushan+Script" rel="stylesheet">
@@ -26,8 +26,8 @@
 				<div class="valign-wrapper raise_z">
 					<div class="row raise_z">
 						<div class="col s12 intro_col">
-							<h1 id="intro_header" class="center white-text">Trying to Build Something <span id="intro_change">Unique?</span></h1>
-							<p class="center white-text intro_text">I Can Do That.</p>
+							<h1 id="intro_header" class="center white-text">Building Something <span id="intro_change">Unique?</span></h1>
+							<p class="center white-text intro_text">I Can Help.</p>
 							<br>
 
 						</div>
@@ -52,10 +52,9 @@
 							</div>
 							<div class="col m6 s6">
 								<ul id="nav-mobile" class="right">
-									<li><a class="nav_text" href="#intro">Top</a></li>
 									<li><a class="nav_text" href="#portfolio">Projects</a></li>
 									<li><a class="nav_text" href="#contact">Contact</a></li>
-									<li><a href="resume.html" class="nav_text" target="_blank" rel="noopener">Resume</a></li>
+									<li><a href="resume.html" class="nav_text" target="_blank" rel="noopener">Resume <ion-icon name="link"></ion-icon></a></li>
 								</ul>
 							</div>
 						</div>
@@ -67,13 +66,13 @@
 
 	<!-- sidenav for collapsed navbar -->
 	<ul id="mobile-menu" class="sidenav">
-		<li><a href="#intro">Bio</a></li>
 		<li><a href="#portfolio">Projects</a></li>
 		<li><a href="#contact">Contact</a></li>
+		<li><a href="resume.html" target="_blank" rel="noopener">Resume <ion-icon name="link"></ion-icon></a></li>
 	</ul>
 
 	<!-- Portfolio -->
-	<section id="portfolio" class="scrollspy blue darken-1">
+	<section id="portfolio" class="scrollspy">
 		<div class="valign-wrapper">
 			<div class="row">
 				<div class="col m12">
@@ -84,9 +83,9 @@
 						<div class="col s12">
 							
 							<div id="portfolio_carousel" class="carousel carousel-slider center">
-								<div class="carousel-item blue darken-1" href="#one!">
+								<div class="carousel-item" href="#one!">
 									<a href="https://soulwork-soulmate-demo.herokuapp.com/" target="_blank" rel="noopener">
-										<h2 class=" white-text portfolio_title">
+										<h2 class="portfolio_title white-text">
 											<span class="title_sm">SoulMate</span>
 										</h2>
 									</a>
@@ -97,7 +96,7 @@
 									<br>
 									<button class="btn-flat white-text amber darken-3 modal-trigger" data-target="modal_sm">more 》</button>
 								</div>
-								<div class="carousel-item blue darken-1" href="#two!">
+								<div class="carousel-item" href="#two!">
 									<a href="https://rouleats-reloaded.herokuapp.com/" target="_blank" rel="noopener">
 										<h2 class="portfolio_title white-text">
 											<span class="title_re_1">Roul</span><span class="title_re_2">Eats</span>
@@ -110,9 +109,9 @@
 									<br>
 									<button class="btn-flat white-text amber darken-3 modal-trigger" data-target="modal_re">more 》</button>
 								</div>
-								<div class="carousel-item blue darken-1" href="#three!">
+								<div class="carousel-item" href="#three!">
 									<a href="https://scrapesoda.herokuapp.com/" target="_blank" rel="noopener">
-										<h2 class=" white-text portfolio_title">
+										<h2 class="portfolio_title white-text">
 											<span class="title_ss">ScrapeSoda</span>
 										</h2>
 									</a>
@@ -132,52 +131,52 @@
 	</section>
 
 	<!-- Portfolio modals -->
-	<div id="modal_sm" class="modal black">
-		<div class="modal-content grey darken-3">
+	<div id="modal_sm" class="modal blue darken-3">
+		<div class="modal-content grey darken-4">
 			<h2 class="white-text center portfolio_title modal_title">
 				<span class="title_sm">SoulMate</span>
 			</h2>
 			<div class="container white">
-				<p id="modal_text">
+				<p class="modal_text">
 					<img class="responsive-img" src="https://raw.githubusercontent.com/kkoeckritz/koecimg/master/soulmate-screen.png">
 				</p>	
 			</div>
 		</div>
-		<div class="modal-footer grey darken-2">
+		<div class="modal-footer">
 			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
 			<a href="https://soulwork-soulmate-demo.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <ion-icon name="globe"></ion-icon></a>
 			<a href="https://github.com/kkoeckritz/CoffeeMatch" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <ion-icon name="code"></ion-icon></a>
 		</div>
 	</div>
-	<div id="modal_re" class="modal black">
-		<div class="modal-content grey darken-3">
+	<div id="modal_re" class="modal blue darken-3">
+		<div class="modal-content grey darken-4">
 			<h2 class="white-text center portfolio_title modal_title">
 				<span class="title_re_1">Roul</span><span class="title_re_2">Eats</span>
 			</h2>
 			<div class="container white">
-				<p id="modal_text">
+				<p class="modal_text">
 					<img class="responsive-img" src="https://raw.githubusercontent.com/kkoeckritz/koecimg/master/rouleats-screen.png">
 				</p>	
 			</div>
 		</div>
-		<div class="modal-footer grey darken-2">
+		<div class="modal-footer ">
 			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
 			<a href="https://rouleats-reloaded.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <ion-icon name="globe"></ion-icon></a>
 			<a href="https://github.com/kkoeckritz/RoulEats_Reloaded" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <ion-icon name="code"></ion-icon></a>
 		</div>
 	</div>
-	<div id="modal_ss" class="modal black">
-		<div class="modal-content grey darken-3">
+	<div id="modal_ss" class="modal blue darken-3">
+		<div class="modal-content grey darken-4">
 			<h2 class="white-text center portfolio_title modal_title">
 				<span class="title_ss">ScrapeSoda</span>
 			</h2>
 			<div class="container white">
-				<p id="modal_text">
+				<p class="modal_text">
 					<img class="responsive-img" src="https://raw.githubusercontent.com/kkoeckritz/koecimg/master/scrapesoda-screen.png">
 				</p>	
 			</div>
 		</div>
-		<div class="modal-footer grey darken-2">
+		<div class="modal-footer">
 			<a href="#!" class="modal-close btn-flat white-text left">《 Back</a>
 			<a href="https://scrapesoda.herokuapp.com/" class="btn-flat amber-text right" target="_blank" rel="noopener">Deployed <ion-icon name="globe"></ion-icon></a>
 			<a href="https://github.com/kkoeckritz/scrape_soda" class="btn-flat amber-text right" target="_blank" rel="noopener">Code <ion-icon name="code"></ion-icon></a>
@@ -185,7 +184,7 @@
 	</div>	
 
 	<!-- Contact -->
-	<section id="contact" class="scrollspy blue darken-3">
+	<section id="contact" class="scrollspy">
 		<div class="valign-wrapper">
 			<div class="row">
 				<div class="col m12">
@@ -222,16 +221,11 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- <div class="row center circle_holder">
-		<img src="./assets/images/circle.svg" class="contact_circle" alt="nothing here">
-	</div> -->
-
 	
-	<!--JavaScript at end of body for optimized loading-->
-	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+	<!-- link jquery, materialize, ionicons, custom scripts -->
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="./assets/js/materialize.min.js"></script>
 	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script src="./assets/js/main.js"></script>
 </body>
 </html>

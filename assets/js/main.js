@@ -1,10 +1,3 @@
-$(document).ready(function(){
-  initMaterialize();
-  // custom.carousel.slide("intro_carousel");
-  custom.carousel.slide("portfolio_carousel");
-  custom.text.change();
-});
-
 /**
  * Initialize Materialize objects
  */
@@ -22,13 +15,6 @@ function initMaterialize() {
     scrollOffset: 0
   });
 
-  // // carousels
-  // $("#intro_carousel").carousel({
-  //   fullWidth: true,
-  //   indicators: false,
-  //   duration: 500
-  // });
-
   $("#portfolio_carousel").carousel({
     fullWidth: true,
     indicators: true,
@@ -39,6 +25,9 @@ function initMaterialize() {
   $('.modal').modal();
 }
 
+/**
+ * Contains custom funcs
+ */
 var custom = {
 
   carousel: {
@@ -55,11 +44,9 @@ var custom = {
         // slide or cancel interval if touched
         if (c_id != "intro_carousel" && (custom.carousel.inst[c_id].pressed || custom.carousel.inst[c_id].dragged)) {
           clearInterval(custom.carousel.invl[c_id]);
-          // console.log("halt!");
           custom.carousel.inst[c_id].options.duration = 200;
         } else {
           custom.carousel.inst[c_id].next();
-          // console.log("slide!");
         }
       }, 10000);
     }
@@ -82,9 +69,17 @@ var custom = {
           $("#intro_change")
           .text(custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)])
           .fadeIn(500);
-          // console.log("change!");
         })
       }, 10000);
     }
   }
 }
+
+/**
+ * Run it!
+ */
+$(document).ready(function(){
+  initMaterialize();
+  custom.carousel.slide("portfolio_carousel");
+  custom.text.change();
+});
