@@ -72,6 +72,100 @@ var custom = {
         })
       }, 10000);
     }
+  },
+
+  name: {
+    flashBrand: () => {
+
+      // store individual letters
+      let b_letters = [
+          'o',
+          'e',
+          'c'
+      ];
+      let f_letters = [
+          'K',
+          'r',
+          'i',
+          's'
+      ];
+      let l_letters = [
+          'k',
+          'r',
+          'i',
+          't',
+          'z'
+      ];
+  
+      // replace name with site brand
+      let f_name = $("#f_name");
+      let l_name = $("#l_name");
+  
+      f_name.text("");
+      l_name.text("K");
+      $("#tld").hide().text(".io");
+      
+      // f_name.fadeIn(500);
+      // l_name.fadeIn(500);
+  
+      // animate to brand
+      let i = 0;
+      let b_int = setInterval(() => {
+  
+          let cur_b = l_name.text();
+          if (cur_b != "Koec") {
+              l_name.text(cur_b + b_letters[i]);
+          } else {
+              clearInterval(b_int);
+          }
+  
+          i++;
+      }, 100);
+  
+      setTimeout(() => {
+          $("#tld").fadeIn(500);
+          setTimeout(() => {
+              $("#tld").fadeOut(250);
+          }, 1900);
+      }, 500);
+  
+  
+      // animate back to name
+      setTimeout(() => {
+          
+          // get rid of tld
+          
+  
+          // add back letters to first name
+          let j = 0;
+          let f_int = setInterval(() => {
+              let cur_f = f_name.text();
+              if (cur_f != "Kris") {
+                  f_name.text(cur_f + f_letters[j]);
+              } else {
+                  clearInterval(f_int);
+              }
+  
+              j++;
+          }, 25);
+  
+          setTimeout(() => {
+              // ditto second name
+              let k = 0;
+              let l_int = setInterval(() => {
+  
+                  let cur_l = l_name.text();
+                  if (cur_l != "Koeckritz") {
+                      l_name.text(cur_l + l_letters[k]);
+                  } else {
+                      clearInterval(l_int);
+                  }
+  
+                  k++;
+              }, 25);            
+          }, 100);
+      }, 2500);
+  }
   }
 }
 
@@ -80,6 +174,7 @@ var custom = {
  */
 $(document).ready(function(){
   initMaterialize();
+  custom.name.flashBrand();
   custom.carousel.slide("portfolio_carousel");
   custom.text.change();
 });
