@@ -8,6 +8,7 @@ function initMaterialize() {
     top: $("#nav_float").offset().top
   });
   
+  // parallax
   $(".parallax").parallax();
   
   // scrollspy
@@ -15,6 +16,10 @@ function initMaterialize() {
     scrollOffset: 0
   });
 
+  //sidenav
+  $(".sidenav").sidenav();
+
+  // carousel
   $("#portfolio_carousel").carousel({
     fullWidth: true,
     indicators: true,

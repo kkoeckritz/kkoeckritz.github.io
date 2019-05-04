@@ -42,9 +42,9 @@ body {
 }
 
 #intro_change {
-	margin-top: 40px;
+	margin-top: 12px;
 	
-	font-size: 7rem;
+	font-size: 6rem;
 	font-style: italic;
 }
 
@@ -103,6 +103,10 @@ body {
 	font-size: 30pt;
 	font-family: 'Fjalla One', sans-serif;
 	text-shadow: -2px 2px 1px #ff8f00;
+}
+
+#menu_btn {
+	font-size: 1.5rem;
 }
 
 
@@ -251,6 +255,10 @@ body {
 		left: -20px !important;
 		bottom: -20px !important
 	}
+
+	#menu_btn {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -279,20 +287,21 @@ body {
 		text-shadow: -1px 1px 1px #ff8f00;
 	}
 
-	.img_me {
-		position: absolute !important;
-		width: 182px;
-		left: -20px !important;
-		bottom: -16px !important;
+	#intro_change {
+		font-size: 4.6rem;
 	}
 
 	.big_letter {
-        font-size: 22pt;
+    font-size: 22pt;
 	}
 
 	.nav_text {
 		padding: 0 5px;
 		font-size: 10pt;
+	}
+
+	#menu_btn {
+		display: initial;
 	}
 
 	/* #portfolio {
