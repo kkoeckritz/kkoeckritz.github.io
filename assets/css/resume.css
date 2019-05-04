@@ -206,6 +206,11 @@ li::before {
     font-weight: 400;
 }
 
+.proj_role {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
 .proj_desc {
     line-height: 150%;
     
@@ -213,7 +218,8 @@ li::before {
 }
 
 .proj_links {
-    font-weight: 500;
+    font-size: 12pt;
+    font-weight: 400;
 }
 
 .proj_code {
