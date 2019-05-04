@@ -110,6 +110,15 @@ body {
 }
 
 
+/* sidenav */
+#slide-out {
+	width: 223px;
+}
+
+.nav_letter {
+	padding-left: 32px;
+}
+
 /* Portfolio */
 #portfolio {
 	height: 100vh;
