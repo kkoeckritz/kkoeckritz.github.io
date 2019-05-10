@@ -42,7 +42,7 @@ body {
 }
 
 #intro_change {
-	margin-top: 12px;
+	margin-top: 40px;
 	
 	font-size: 6rem;
 	font-style: italic;
@@ -187,7 +187,6 @@ body {
 
 	font-size: 18pt !important;
 	font-weight: 100;
-	white-space: nowrap;
 }
 
 .portfolio_text:any-link {
@@ -258,20 +257,13 @@ body {
 
 /* mobile size fixes */
 @media only screen and (max-width: 992px) {
-	.img_me {
-		width: 240px;
-		position: absolute !important;
-		left: -20px !important;
-		bottom: -20px !important
-	}
-
 	#menu_btn {
 		display: none;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-    #intro {
+  #intro {
 		height: calc(100% - 57px);
 	}
 
