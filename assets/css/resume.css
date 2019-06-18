@@ -1,17 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
-@font-face {
-    font-family: "Kaushian";
-    src: url("/assets/fonts/KaushanScript-Regular.ttf");
-}
-@font-face {
-    font-family: "Knewave";
-    src: url("/assets/fonts/Knewave-Regular.ttf");
-}
 
 /* Global element styles */
 body {
     background-color: rgb(40, 80, 100);
-    font-family: "Roboto", sans-serif !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 li::before {
@@ -167,14 +159,15 @@ li::before {
 .summary_section {
     padding-top: 10px;
     
+    color: #253035;
     font-size: 12pt;
 }
 
 .tech_section {
     padding-top: 10px;
     
-    font-size: 12pt;
     color: #253035;
+    font-size: 12pt;
 }
 
 .bold {

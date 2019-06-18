@@ -66,7 +66,8 @@ var custom = {
       "Engaging?",
       "Incredible?",
       "Bold?",
-      "Spectacular?"
+      "Spectacular?",
+      "Open?"
     ],
     change: () => {
       custom.text.invl = setInterval(() => {

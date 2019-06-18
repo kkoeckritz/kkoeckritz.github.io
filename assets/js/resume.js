@@ -30,10 +30,7 @@ function flashBrand() {
     f_name.text("");
     l_name.text("K");
     $("#tld").hide().text(".io");
-    
-    // f_name.fadeIn(500);
-    // l_name.fadeIn(500);
-
+  
     // animate to brand
     let i = 0;
     let b_int = setInterval(() => {
@@ -58,9 +55,6 @@ function flashBrand() {
 
     // animate back to name
     setTimeout(() => {
-        
-        // get rid of tld
-        
 
         // add back letters to first name
         let j = 0;
