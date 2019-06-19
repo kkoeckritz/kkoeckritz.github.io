@@ -266,22 +266,22 @@ body {
 	height: 100%;
 }
 
-.svg_ring-0 {
+.svg_ring {
 	stroke: white;
 	fill: none;
 	transform-origin: center;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.ring_anim-0 {
 	animation: rotate-ring-0 20s linear infinite;
 }
-.svg_ring-1 {
-	stroke: white;
-	fill: none;
-	transform-origin: center;
+.ring_anim-1 {
 	animation: rotate-ring-1 28s linear infinite;
 }
-.svg_ring-2 {
-	stroke: white;
-	fill: none;
-	transform-origin: center;
+.ring_anim-2 {
 	animation: rotate-ring-2 35s linear infinite;
 }
 @keyframes rotate-ring-0{

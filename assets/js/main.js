@@ -164,17 +164,16 @@ var custom = {
 	},
 	
 	rings: {
-		
 		// draw svg rings over contact info
 		drawRings: () => {
 			let rings = "";
 			
 			for (let i = 0; i < 3; i++) {
-				let rx = 30 + Math.floor(Math.random() * 5);
-				let ry = 25 + Math.floor(Math.random() * 5);
-				let st = 1 + Math.floor(Math.random() * 3)
+				let rx = 21 + Math.floor(Math.random() * 5);
+				let ry = 31 + Math.floor(Math.random() * 5);
+				let st = 1 + Math.floor(Math.random() * 2);
 
-				rings += (`<ellipse rx="${rx}%" ry="${ry}%" cx="50%" cy="50%" stroke-width="${st}" class="svg_ring-${i}" />`);
+				rings += (`<ellipse rx="${rx}%" ry="${ry}%" cx="50%" cy="50%" stroke-width="${st}" class="svg_ring ring_anim-${i}" />`);
 			}
 
 			$(`<svg class="svg_box">${rings}</svg>`).appendTo(".svg_wrapper");
