@@ -53,14 +53,14 @@ var custom = {
 	text: {
 		invl: 0,
 		choices: [
-			"unique?",
-			"beautiful?",
-			"distinctive?",
-			"engaging?",
-			"incredible?",
-			"bold?",
-			"spectacular?",
-			"open?"
+			"UNIQUE?",
+			"BEAUTIFUL?",
+			"DISTINCTIVE?",
+			"ENGAGING?",
+			"INCREDIBLE?",
+			"BOLD?",
+			"SPECTACULAR?",
+			"OPEN?"
 		],
 		change: () => {
 			custom.text.invl = setInterval(() => {
@@ -170,13 +170,11 @@ var custom = {
 			let rings = "";
 			
 			for (let i = 0; i < 3; i++) {
-				let rx = 25 + Math.floor(Math.random() * 5);
+				let rx = 30 + Math.floor(Math.random() * 5);
 				let ry = 25 + Math.floor(Math.random() * 5);
 				let st = 1 + Math.floor(Math.random() * 3)
-				let rot = 0 + Math.floor(Math.random() * 360);
-				let dur = 15 + Math.floor(Math.random() * 10);
 
-				rings += (`<ellipse rx="${rx}%" ry="${ry}%" cx="50%" cy="50%" stroke-width="${st}" transform="rotate(${rot})" class="svg_ring" />`);
+				rings += (`<ellipse rx="${rx}%" ry="${ry}%" cx="50%" cy="50%" stroke-width="${st}" class="svg_ring-${i}" />`);
 			}
 
 			$(`<svg class="svg_box">${rings}</svg>`).appendTo(".svg_wrapper");

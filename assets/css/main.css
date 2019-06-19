@@ -46,7 +46,7 @@ body {
 }
 
 #intro_change {
-	margin-top: 40px;
+	margin-top: 48px;
 	
 	font-size: 6rem;
 	font-style: italic;
@@ -187,18 +187,6 @@ body {
 	font-weight: 700;
 }
 
-/* .portfolio_link {
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	font-size: 28pt;
-	line-height: 50px;
-	font-weight: 100;
-	font-family: 'Fjalla One', sans-serif;
-	font-style: italic;
-	white-space: nowrap;
-} */
-
 .portfolio_text {
 	margin: 0;
 	padding: 0;
@@ -278,18 +266,46 @@ body {
 	height: 100%;
 }
 
-.svg_ring {
+.svg_ring-0 {
 	stroke: white;
 	fill: none;
 	transform-origin: center;
-	/* animation: rotate-ring 10s infinite; */
+	animation: rotate-ring-0 20s linear infinite;
 }
-@keyframes rotate-ring-1{
+.svg_ring-1 {
+	stroke: white;
+	fill: none;
+	transform-origin: center;
+	animation: rotate-ring-1 28s linear infinite;
+}
+.svg_ring-2 {
+	stroke: white;
+	fill: none;
+	transform-origin: center;
+	animation: rotate-ring-2 35s linear infinite;
+}
+@keyframes rotate-ring-0{
 	from {
 		transform: rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+@keyframes rotate-ring-1{
+	from {
+		transform: rotate(-80deg);
+	}
+	to {
+		transform: rotate(-440deg);
+	}
+}
+@keyframes rotate-ring-2{
+	from {
+		transform: rotate(120deg);
+	}
+	to {
+		transform: rotate(480deg);
 	}
 }
 
