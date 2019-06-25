@@ -6,8 +6,6 @@ function initMaterialize() {
 		top: $("#nav_float").offset().top
 	});
 	
-	$(".parallax").parallax();
-	
 	$(".scrollspy").scrollSpy({
 		scrollOffset: 0
 	});

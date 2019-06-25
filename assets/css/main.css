@@ -1,31 +1,22 @@
-body {
-	overflow-y: scroll;
+::selection {
+	color: black;
+	background-color: white;
 }
 
-/* Intro, Nav holder */
+
+/* container for intro, nav */
 .holder {
 	height: 100vh;
-
-	background-color: rgb(60, 100, 120);
+	
+	background-image: url('../../assets/images/intro_back.jpg');
+	background-attachment: fixed;
+	background-size: cover;
 }
-
 
 /* Intro */
 #intro {
 	height: calc(100vh - 64px);
 	z-index: 1;
-
-	background-color: rgb(70, 110, 130);
-}
-
-.parallax-container {
-	width: 100%;
-	height: calc(100vh - 64px);
-}
-
-#parallax_image {
-	width: 110%;
-	height: 125vh;
 }
 
 .raise_z {
@@ -35,14 +26,20 @@ body {
 .intro_col {
 	margin: 0 !important;
 	padding: 0 !important;
-	width: 100vw !important;
+	width: auto;
 }
 
 #intro_header {
+	padding: 1rem;
+	
 	color: white;
+	background-color: #ffb300;
 	font-family: 'Fjalla One', sans-serif;
 	font-weight: bold;
 	text-shadow: -2px 2px 1px #ff8f00;
+	border: .5rem solid #ff8f00;
+	outline: 1px solid white;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)
 }
 
 .intro_top {
@@ -52,14 +49,11 @@ body {
 #intro_change {
 	font-size: 6rem;
 	font-style: italic;
+	text-shadow: -2px 2px 1px #ff8f00;
 }
 
 .intro_bottom {
-	font-size: 2rem;
-}
-
-.intro_row {
-	width: 100vw;
+	font-size: 3rem;
 }
 
 .intro_valign {
@@ -77,9 +71,8 @@ body {
 
 #nav_dummy {
 	position: relative;
-	top: 100%;
 	outline: 1px solid white;
-	z-index: 0;
+	z-index: 1;
 }
 
 
@@ -149,10 +142,6 @@ body {
 
 .portfolio_row {
 	width: 75vw;
-}
-
-#portfolio_carousel {
-	border-radius: 10px;
 }
 
 .indicator-item {
@@ -332,7 +321,7 @@ body {
 	}
 	
 	#intro_header {
-		text-shadow: -1px 2px 1px #ff8f00;
+		text-shadow: -2px 2px 1px #ff8f00;
 	}
 	
 	.intro_top {
