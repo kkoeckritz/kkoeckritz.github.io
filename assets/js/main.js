@@ -61,11 +61,26 @@ var custom = {
 			"OPEN?"
 		],
 		change: () => {
+			let $change = $("#intro_change");
+			
+			$change.text(custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)]);
+			
 			custom.text.invl = setInterval(() => {
-				$("#intro_change").fadeOut(500, () => {
-					$("#intro_change")
-					.text(custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)])
-					.fadeIn(500);
+
+				$change.fadeOut(500, () => {
+					let new_text = custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)];
+
+					$change.text("");
+					for (let i of new_text) {
+						let sty = Math.floor(Math.random() * 4);
+
+						$("<span></span>", {
+							text: i,
+							"class": `change-${sty}`
+						}).appendTo($change);
+					}
+
+					$change.fadeIn(500);
 				})
 			}, 10000);
 		}
@@ -182,7 +197,7 @@ var custom = {
 /**
 * Run it!
 */
-$(document).ready(function(){
+$(document).ready(function() {
 	initMaterialize();
 	custom.name.flashBrand();
 	custom.carousel.slide("portfolio_carousel");

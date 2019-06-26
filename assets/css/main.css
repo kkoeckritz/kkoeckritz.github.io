@@ -29,7 +29,7 @@
 	width: auto;
 }
 
-#intro_header {
+#intro_heading {
 	padding: 1rem;
 	
 	color: white;
@@ -37,9 +37,10 @@
 	font-family: 'Fjalla One', sans-serif;
 	font-weight: bold;
 	text-shadow: -2px 2px 1px #ff8f00;
-	border: .5rem solid #ff8f00;
+	border: 1rem solid #ff8f00;
 	outline: 1px solid white;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	cursor: default;
 }
 
 .intro_top {
@@ -49,7 +50,53 @@
 #intro_change {
 	font-size: 6rem;
 	font-style: italic;
-	text-shadow: -2px 2px 1px #ff8f00;
+}
+.change-0 {
+	animation: change_anim-0 2s linear infinite alternate;
+}
+.change-1 {
+	animation: change_anim-0 2.25s ease-in-out infinite alternate;
+}
+.change-2 {
+	animation: change_anim-0 2.75s linear infinite alternate;
+}
+.change-3 {
+	animation: change_anim-0 3s ease-in-out infinite alternate;
+}
+@keyframes change_anim-0 {
+	0% {
+		text-shadow: 0px -5px 12px #ffffff, 0px -3px 5px #ffb300;
+	}
+	10% {
+		text-shadow: 1px -3px 12px #ffffff, 1px -1px 5px #ffb300;
+	}
+	20% {
+		text-shadow: 0px -4px 12px #ffffff, 0px -2px 5px #ffb300;
+	}
+	30% {
+		text-shadow: 0px -6px 12px #ffffff, 2px -3px 5px #ffb300;
+	}
+	40% {
+		text-shadow: -1px -3px 12x #ffffff, -1px -2px 5px #ffb300;
+	}
+	50% {
+		text-shadow: 0px -3px 12px #ffffff, 0px -1px 5px #ffb300;
+	}
+	60% {
+		text-shadow: 1px -4px 12px #ffffff, 1px -3px 5px #ffb300;
+	}
+	70% {
+		text-shadow: -1px -2px 12x #ffffff, -1px -1px 5px #ffb300;
+	}
+	80% {
+		text-shadow: 0px -7px 12px #ffffff, 1px -4px 5px #ffb300;
+	}
+	90% {
+		text-shadow: 1px -3px 12px #ffffff, 1px -1px 5px #ffb300;
+	}
+	100% {
+		text-shadow: 0px -5px 12px #ffffff, 0px -3px 5px #ffb300;
+	}
 }
 
 .intro_bottom {
@@ -263,15 +310,15 @@
 	transform: translate3d(0, 0, 0);
 }
 .ring_anim-0 {
-	animation: rotate-ring-0 20s linear infinite;
+	animation: rotate_ring-0 20s linear infinite;
 }
 .ring_anim-1 {
-	animation: rotate-ring-1 28s linear infinite;
+	animation: rotate_ring-1 28s linear infinite;
 }
 .ring_anim-2 {
-	animation: rotate-ring-2 35s linear infinite;
+	animation: rotate_ring-2 35s linear infinite;
 }
-@keyframes rotate-ring-0{
+@keyframes rotate_ring-0 {
 	from {
 		transform: rotate(0deg);
 	}
@@ -279,7 +326,7 @@
 		transform: rotate(360deg);
 	}
 }
-@keyframes rotate-ring-1{
+@keyframes rotate_ring-1 {
 	from {
 		transform: rotate(-80deg);
 	}
@@ -287,7 +334,7 @@
 		transform: rotate(-440deg);
 	}
 }
-@keyframes rotate-ring-2{
+@keyframes rotate_ring-2 {
 	from {
 		transform: rotate(120deg);
 	}
