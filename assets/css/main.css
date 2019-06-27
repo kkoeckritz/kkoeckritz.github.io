@@ -39,7 +39,7 @@
 	text-shadow: -2px 2px 1px #ff8f00;
 	border: 1rem solid #ff8f00;
 	outline: 1px solid white;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 8px 6px rgba(0,0,0,.2);
 	cursor: default;
 }
 
@@ -52,50 +52,50 @@
 	font-style: italic;
 }
 .change-0 {
-	animation: change_anim-0 2s linear infinite alternate;
+	animation: change_anim-0 3s linear infinite alternate;
 }
 .change-1 {
-	animation: change_anim-0 2.25s ease-in-out infinite alternate;
+	animation: change_anim-0 3.25s ease-in-out infinite alternate;
 }
 .change-2 {
-	animation: change_anim-0 2.75s linear infinite alternate;
+	animation: change_anim-0 3.75s linear infinite alternate;
 }
 .change-3 {
-	animation: change_anim-0 3s ease-in-out infinite alternate;
+	animation: change_anim-0 4s ease-in-out infinite alternate;
 }
 @keyframes change_anim-0 {
 	0% {
-		text-shadow: 0px -5px 12px #ffffff, 0px -3px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -7px 15px white, 0px -5px 5px #ffb300;
 	}
 	10% {
-		text-shadow: 1px -3px 12px #ffffff, 1px -1px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 1px -5px 15px white, 1px -3px 5px #ffb300;
 	}
 	20% {
-		text-shadow: 0px -4px 12px #ffffff, 0px -2px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -4px 15px white, 0px -2px 5px #ffb300;
 	}
 	30% {
-		text-shadow: 0px -6px 12px #ffffff, 2px -3px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -6px 15px white, 2px -4px 5px #ffb300;
 	}
 	40% {
-		text-shadow: -1px -3px 12x #ffffff, -1px -2px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, -1px -4px 12x white, -1px -2px 5px #ffb300;
 	}
 	50% {
-		text-shadow: 0px -3px 12px #ffffff, 0px -1px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -3px 15px white, 0px -2px 5px #ffb300;
 	}
 	60% {
-		text-shadow: 1px -4px 12px #ffffff, 1px -3px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 1px -4px 15px white, 1px -3px 5px #ffb300;
 	}
 	70% {
-		text-shadow: -1px -2px 12x #ffffff, -1px -1px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, -1px -3px 15px white, -1px -2px 5px #ffb300;
 	}
 	80% {
-		text-shadow: 0px -7px 12px #ffffff, 1px -4px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -7px 15px white, 1px -4px 5px #ffb300;
 	}
 	90% {
-		text-shadow: 1px -3px 12px #ffffff, 1px -1px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 1px -5px 15px white, 1px -3px 5px #ffb300;
 	}
 	100% {
-		text-shadow: 0px -5px 12px #ffffff, 0px -3px 5px #ffb300;
+		text-shadow: -2px 2px 4px #ff8f00, 0px -7px 15px white, 0px -3px 5px #ffb300;
 	}
 }
 

@@ -30,7 +30,7 @@ var custom = {
 		elem: {},
 		inst: {},
 		invl: {},
-		slide: (c_id) => {
+		setSlide: (c_id) => {
 			
 			// scroll through carousel every 10 seconds
 			custom.carousel.elem[c_id] = document.getElementById(c_id);
@@ -60,29 +60,32 @@ var custom = {
 			"SPECTACULAR?",
 			"OPEN?"
 		],
-		change: () => {
+		change: (new_word) => {
 			let $change = $("#intro_change");
-			
-			$change.text(custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)]);
-			
+
+			$change.text("");
+			for (let i of new_word) {
+				let sty = Math.floor(Math.random() * 4);
+
+				// append each letter and 
+				$("<span></span>", {
+					text: i,
+					"class": `change-${sty}`
+				}).appendTo($change);
+			}
+		},
+		setChange: () => {
+			let $change = $("#intro_change");
+
 			custom.text.invl = setInterval(() => {
+				let new_word = custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)];
 
 				$change.fadeOut(500, () => {
-					let new_text = custom.text.choices[Math.floor(Math.random() * custom.text.choices.length)];
-
-					$change.text("");
-					for (let i of new_text) {
-						let sty = Math.floor(Math.random() * 4);
-
-						$("<span></span>", {
-							text: i,
-							"class": `change-${sty}`
-						}).appendTo($change);
-					}
-
+					custom.text.change(new_word);
 					$change.fadeIn(500);
 				})
-			}, 10000);
+				
+			}, 10000)
 		}
 	},
 	
@@ -199,8 +202,9 @@ var custom = {
 */
 $(document).ready(function() {
 	initMaterialize();
+	custom.text.change("UNIQUE?");
+	custom.text.setChange();	
 	custom.name.flashBrand();
-	custom.carousel.slide("portfolio_carousel");
-	custom.text.change();
+	custom.carousel.setSlide("portfolio_carousel");
 	custom.rings.drawRings();
 });
