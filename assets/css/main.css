@@ -30,15 +30,14 @@
 }
 
 #intro_heading {
-	padding: 1rem;
+	padding: 1.5rem;
 	
 	color: white;
 	background-color: #ffb300;
 	font-family: 'Fjalla One', sans-serif;
 	font-weight: bold;
 	text-shadow: -2px 2px 1px #ff8f00;
-	border: 1rem solid #ff8f00;
-	outline: 1px solid white;
+	border: .5rem solid #ff8f00;
 	box-shadow: 0 8px 8px 6px rgba(0,0,0,.2);
 	cursor: default;
 }
